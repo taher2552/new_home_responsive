@@ -1253,6 +1253,7 @@
  width:100%;
  margin-top: 1.5rem;
 }
+
 .nh_monetize_box,
 .nh_register_box,
 .nh_training_box {
@@ -1262,6 +1263,13 @@
   border-top-right-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
   margin-bottom: 1rem;
+}
+
+.nh_monetize > div:nth-child(2) {
+  float: right;
+  border-radius: 0;
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
 }
 
 .nh_register_box{
@@ -1311,6 +1319,12 @@
   font-size: 1rem;
   color:#fff;
 }
+
+.nh_monetize:nth-child(2) {
+  justify-self: flex-end; /* Aligns the second div to the right */
+}
+}
+
 @media only screen and (max-width: 950px) {
 .city_box, .sports_box{
   width:45rem ;
