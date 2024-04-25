@@ -1195,6 +1195,13 @@
   flex-direction: column;
 }
 
+.monetize_flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 @media only screen and (max-width:1200px) {
   .nh_detail {
@@ -1244,12 +1251,34 @@
 .nh_monetize{
  display:block;
  width:100%;
+ margin-top: 1.5rem;
 }
 .nh_monetize_box,
 .nh_register_box,
 .nh_training_box {
   width: 90%;
+  height: 15rem;
+  border-radius: 0;
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  margin-bottom: 1rem;
 }
+
+.nh_register_box{
+  background-color:#FB8295;
+}
+.nh_training_box{
+  background-color: #B095DD;
+}
+
+.nh_monetize_box{
+  background-color: #D7AA00;
+}
+
+.nh_monetize {
+  padding:0rem;
+}
+
 
 .step_register{
   justify-content: space-between;
@@ -1257,6 +1286,30 @@
   flex-direction: row-reverse;
   width: 100%;
 }
+
+.monetize_flex{
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap:2rem;
+}
+
+.step_one{
+  color:#A10019;
+}
+.step_two{
+  color:#3A0099;
+}
+.step_three{
+  color:#896D05;
+}
+.register_step {
+  color: #fff;
+}
+.step_info {
+  font-weight: 600;
+  font-size: 1rem;
+  color:#fff;
 }
 @media only screen and (max-width: 950px) {
 .city_box, .sports_box{
