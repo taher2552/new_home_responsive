@@ -192,8 +192,4 @@ $('#citySearchInput').keyup(function() {
   });
 });
 
-
-
-
-
 });

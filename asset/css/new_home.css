@@ -1258,11 +1258,12 @@
 .nh_register_box,
 .nh_training_box {
   width: 90%;
-  height: 15rem;
+  height:auto;
   border-radius: 0;
   border-top-right-radius: 0.625rem;
   border-bottom-right-radius: 0.625rem;
   margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 .nh_monetize > div:nth-child(2) {
@@ -1299,7 +1300,7 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap:2rem;
+  gap:1rem;
 }
 
 .step_one{
@@ -1323,6 +1324,7 @@
 .nh_monetize:nth-child(2) {
   justify-self: flex-end; /* Aligns the second div to the right */
 }
+
 }
 
 @media only screen and (max-width: 950px) {
@@ -1478,11 +1480,14 @@
     width: 1.8rem;
     height:1.8rem;
   }
+
+
 }
 @media only screen and (max-width: 430px) {
   .register_img img {
     width: 17rem;
   }
+
 }
 @media only screen and (max-width: 400px) {
   .nh_top_text h1,
