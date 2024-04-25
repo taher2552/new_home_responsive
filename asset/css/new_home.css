@@ -1210,6 +1210,12 @@
 
 
 
+@media only screen and (max-width:1210px) {
+  .ad_text_one,
+  .ad_text_two{
+    font-size: 1.5rem;
+  }
+}
 @media only screen and (max-width:1200px) {
   .nh_detail {
     font-size: 1.5rem;
@@ -1228,6 +1234,15 @@
   .nh_register_box,
   .nh_training_box {
     height: 25rem;
+  }
+}
+@media only screen and (max-width:1080px) {
+  .ad_text_one,
+  .ad_text_two{
+    font-size: 1.2rem;
+  }
+  .ad_img img {
+    height: 15rem;
   }
 }
 @media only screen and (max-width: 942px) {
@@ -1350,6 +1365,15 @@
 }
 
 }
+@media only screen and (max-width:870px) {
+  .ad_text_one,
+  .ad_text_two{
+    font-size: 1rem;
+  }
+  .ad_img img {
+    height: 12rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   .city_box, .sports_box{
     width:35rem ;
@@ -1378,6 +1402,12 @@
   }
  
   
+}
+@media only screen and (max-width:730px) {
+  .ad_text_one,
+  .ad_text_two{
+    font-size:0.875rem;
+  }
 }
 @media only screen and (max-width: 700px) {
   .nh_search_wrapper {
@@ -1420,6 +1450,16 @@
     font-size: 2rem;
   }
 }
+@media only screen and (max-width:650px) {
+  .ad_text_one,
+  .ad_text_two{
+    width: 25rem;
+    text-align: center;
+  }
+  .ad_img img {
+    height: 15rem;
+  }
+}
 @media only screen and (max-width:630px) {
   .nh_detail {
     font-size: 1.2rem;
@@ -1441,6 +1481,22 @@
   .nh_count_wrapper {
     padding: 1rem;
 }
+}
+
+@media only screen and (max-width:582px) {
+  .ad_text_one,
+  .ad_text_two{
+    width: 20rem;
+  }
+  .ad_img img {
+    height: 12rem;
+  }
+
+  .ad_text {
+    top: 5%;
+  }
+
+
 }
 @media only screen and (max-width: 550px) {
   .nh_play_wrap h2 {
@@ -1476,6 +1532,22 @@
    }
  
   
+}
+
+@media only screen and (max-width:582px) {
+  .ad_text_one,
+  .ad_text_two{
+    width: 15rem;
+  }
+  .ad_img img {
+    height: 12rem;
+  }
+
+  .ad_text {
+    top: 5%;
+  }
+
+
 }
 @media only screen and (max-width: 450px) {
   .nh_detail {
