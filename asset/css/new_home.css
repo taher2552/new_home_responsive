@@ -297,9 +297,14 @@
   padding: 1.5rem 2.5rem;
 }
 
-.nh_sport_wrapper,
+
 .nh_city {
   margin-top: 2rem;
+}
+
+.nh_sport_wrapper{
+  height:20rem;
+  overflow: auto;
 }
 .nh_play_wrap h2 {
   font-size: 2rem;
@@ -1203,6 +1208,8 @@
 }
 
 
+
+
 @media only screen and (max-width:1200px) {
   .nh_detail {
     font-size: 1.5rem;
@@ -1436,6 +1443,12 @@
 }
 }
 @media only screen and (max-width: 550px) {
+  .nh_play_wrap h2 {
+    font-size: 1.5rem;
+  } 
+  .nh_play_wrap {
+    padding: 1rem;
+  }
   .nh_search_wrapper {
     padding: 1rem;
   } 
