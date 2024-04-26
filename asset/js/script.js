@@ -10,8 +10,6 @@ $(document).ready(function(){
   
   function rollNumbers(targetNumber, duration, resultId) {
     const digits = $(`#${resultId} .digit`);
-    const interval = duration / (targetNumber - 0); // Adjust duration for smoother animation
-  
     const intervalId = setInterval(() => {
       // Generate random digits for each position
       digits.each(function(){
