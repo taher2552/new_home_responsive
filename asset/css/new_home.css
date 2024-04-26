@@ -284,6 +284,14 @@
   font-weight: 700;
 }
 
+.training_step{
+  color:#3A009A;
+}
+
+.monetize_step{
+  color:#B18C00;
+}
+
 .nh_monetize_img img {
   height: 144px;
   width: 144px;
