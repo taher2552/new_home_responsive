@@ -708,6 +708,7 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .blog_btn button {
@@ -1275,6 +1276,15 @@
   }
 }
 @media only screen and (max-width:1000px) {
+  .blog_box {
+    width: 20rem;
+  }
+  
+  .blog_box img {
+    width: 20rem;
+    height: 15rem;
+    border-radius: 0.625rem;
+  }
   .mission_img img:last-child{
     display: block;
     height: 10rem;
@@ -1557,6 +1567,19 @@
   }
 }
 @media only screen and (max-width:630px) {
+  .blog_box {
+    width: 18rem;
+  }
+
+  .blog_topic {
+    font-size: 1rem;
+  }
+  
+  .blog_box img {
+    width: 18rem;
+    height: 12rem;
+    border-radius: 0.625rem;
+  }
   .nh_detail {
     font-size: 1.2rem;
   }
@@ -1595,6 +1618,7 @@
   height: 12rem;
 
 }
+}
 
 @media only screen and (max-width: 550px) {
   .join_img {
@@ -1619,6 +1643,10 @@
     font-weight: 600;
     font-size: 1rem;
   }
+  .blog_wrap,
+.blog_container {
+  padding: 1rem;
+}
   .nh_register_heading {
     margin-left:1rem;
   }
@@ -1660,6 +1688,14 @@
 }
 .join_right input {
   width:20rem;
+}
+
+.latest_blog h2 {
+  font-size: 1.5rem;
+}
+
+.blog_btn {
+  gap: 1rem;
 }
 }
 @media only screen and (max-width: 450px) {
@@ -1709,6 +1745,14 @@
     width:16rem;
   }
 
+  .latest_blog h2 {
+    font-size: 1.2rem;
+  }
+  
+  .blog_btn {
+    gap: 0.5rem;
+  }
+
   .join_text p:first-child{
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1741,6 +1785,10 @@
 @media only screen and (max-width:325px) {
   .nh_top_text h1,
   .nh_top_text span {
+    font-size: 1rem;
+  }
+
+  .latest_blog h2 {
     font-size: 1rem;
   }
 
