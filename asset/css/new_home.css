@@ -399,12 +399,12 @@
   margin-top: 2.5rem;
 }
 
-.ad_img img {
+.ad_img img, .ad_img_2 img {
   height: 18rem;
   width: 100%;
 }
 
-.ad_img {
+.ad_img, .ad_img_2 {
   position: relative;
 }
 
@@ -1249,7 +1249,8 @@
 
 @media only screen and (max-width:1210px) {
   .ad_text_one,
-  .ad_text_two{
+  .ad_text_two,
+  .ad_text_new{
     font-size: 1.5rem;
   }
 }
@@ -1301,10 +1302,14 @@
 }
 @media only screen and (max-width:1080px) {
   .ad_text_one,
-  .ad_text_two{
+  .ad_text_two,
+  .ad_text_new{
     font-size: 1.2rem;
   }
   .ad_img img {
+    height: 15rem;
+  }
+  .ad_img_2 img {
     height: 15rem;
   }
 }
@@ -1439,7 +1444,8 @@
 }
 @media only screen and (max-width:870px) {
   .ad_text_one,
-  .ad_text_two{
+  .ad_text_two,
+  .ad_text_new{
     font-size: 1rem;
   }
   .ad_img img {
@@ -1477,7 +1483,8 @@
 }
 @media only screen and (max-width:730px) {
   .ad_text_one,
-  .ad_text_two{
+  .ad_text_two,
+  .ad_text_new{
     font-size:0.875rem;
   }
 }
@@ -1523,7 +1530,7 @@
   }
 }
 @media only screen and (max-width:650px) {
-  .ad_text_two{
+  .ad_text_two,.ad_text_new{
     width: 25rem;
     text-align: center;
   }
@@ -1609,7 +1616,8 @@
 
 @media only screen and (max-width:582px) {
   .ad_text_one,
-  .ad_text_two{
+  .ad_text_two,
+  .ad_text_new{
     width: 17rem;
   }
   .ad_img img {
@@ -1645,7 +1653,8 @@
   }
 
   .ad_text_one,
-  .ad_text_two{
+  .ad_text_two,
+  .ad_text_new{
     width: 15rem;
   }
 
@@ -1673,7 +1682,8 @@
   }
 
   .ad_text_one,
-  .ad_text_two{
+  .ad_text_two,
+  .ad_text_new{
     width: 12rem;
   }
 
