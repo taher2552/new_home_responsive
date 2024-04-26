@@ -1360,6 +1360,12 @@
  margin-top: 1.5rem;
 }
 
+.social_box p {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .nh_monetize_box,
 .nh_register_box,
 .nh_training_box {
@@ -1494,7 +1500,11 @@
     width: 0.6rem;
     height: 0.6em;
   }
- 
+
+  .social_box p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
   
 }
 @media only screen and (max-width:730px) {
@@ -1621,6 +1631,10 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .social_box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .join_img {
     margin-left:1rem;
     margin-right:1rem;
@@ -1646,6 +1660,7 @@
   .blog_wrap,
 .blog_container {
   padding: 1rem;
+  padding-top: 1.5rem;
 }
   .nh_register_heading {
     margin-left:1rem;
