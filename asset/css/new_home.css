@@ -1607,7 +1607,6 @@ padding: 0.5rem 2.5rem;
     align-items:center;
     padding: 1rem;
     transition: width 1s ease;
-    pointer-events: none;
   }
   
   
@@ -1619,6 +1618,10 @@ padding: 0.5rem 2.5rem;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0,0.5);
+  }
+
+  .work_box{
+    pointer-events: none;
   }
 
   .work_para_2 {
