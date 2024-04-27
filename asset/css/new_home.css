@@ -805,7 +805,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: start;
-  gap: 2rem;
+  gap: 4rem;
   padding-bottom: 2rem;
   flex-wrap: wrap;
 }
@@ -1499,6 +1499,25 @@
   .work_container > .work_box:nth-child(4),
   .work_container > .work_box:nth-child(6) {
     justify-self: end;
+  }
+
+  .work_box {
+    width: 90%;
+    opacity: 0;
+    transform: translateX(-50px); /* Start left-aligned items from the left */
+    transition: all 0.5s ease-out;
+  }
+  
+  .work_container > .work_box:nth-child(2),
+  .work_container > .work_box:nth-child(4),
+  .work_container > .work_box:nth-child(6) {
+    transform: translateX(50px); /* Start right-aligned items from the right */
+  }
+  
+  /* Class to apply when the element is in view */
+  .visible {
+    opacity: 1;
+    transform: translateX(0px);
   }
   
   

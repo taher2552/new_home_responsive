@@ -190,4 +190,8 @@ $('#citySearchInput').keyup(function() {
   });
 });
 
+// sliding
+
+
+
 });
