@@ -524,34 +524,45 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 2rem;
+  
 }
 
 .work_box {
   position: relative;
   cursor: pointer; /* Indicates that the item is interactable */
+  overflow: hidden;
+  height: 18rem;
 }
 
 .work_box img {
   width: 100%;
-  height: 18rem;
+  height: 100%;
+  
 }
 
 .work_name {
   position: absolute;
   top: 0;
   right: 0;
-  height: 98%;
-  width: 25%; /* Start at half width of the container */
+  height: 18rem;
+  width: 10rem;
   display: flex;
-  flex-direction: column; /* Vertical stacking for text */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  text-shadow: 2px 2px #000;
-  backdrop-filter: blur(10px);
-  transition: width 1s ease; /* Smooth transition for background expansion */
+  transition: width 1s ease;
+}
+
+
+.work_name::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  filter: blur(25.5px);
 }
 
 .work_name p {
@@ -559,6 +570,8 @@
   color: #fff;
   transition: transform 1s ease; /* Smooth transitions for text effects */
   margin: 0; /* Remove default margins */
+  position: relative;
+  z-index: 100;
 }
 
 .work_name p:first-child {
