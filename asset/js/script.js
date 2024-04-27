@@ -85,41 +85,6 @@ $(".reg_box").click(function(event) {
 
 //sports
 
-$('.sports_img:nth-child(n+19)').hide();
-
-// Click event on the "View All Sports" button
-$('.sport_text_2').on('click', function() {
-    // Check the current text to decide the action
-    if ($(this).text() === 'View All Sports') {
-        // Show all sports icons
-        $('.sports_img').show();
-        // Change the button text
-        $(this).text('Hide All Sports');
-    } else {
-        // Hide sports icons beyond the first 18
-        $('.sports_img:nth-child(n+19)').hide();
-        // Change the button text
-        $(this).text('View All Sports');
-    }
-});
-
-$('.nh_sport_input').on('keyup', function() {
-  var searchValue = $(this).val().toLowerCase();
-
-  // Show or hide the view all sports text based on the search input
-  if (searchValue) {
-      $('.sport_text_2').hide();  // Hide the view/hide text if search is active
-      $('.sports_img').show();   // Show all to filter properly
-  } else {
-      $('.sport_text_2').show().text('Hide All Sports'); // Show and reset the view all sports text
-                // Hide icons beyond the first 18
-  }
-  
-  // Filter sports based on input
-  $('.sports_img').filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
-  });
-});
 
 $('#sports_click').click(function() {
   $('.sports_popup').slideToggle('fast'); // Toggle visibility with sliding effect
@@ -132,10 +97,6 @@ $(document).on('click', function(event) {
       // If the popup is visible, slide it up to hide
       if ($('.sports_popup').is(':visible')) {
           $('.sports_popup').slideUp('fast');
-          $('.sport_text_2').show().text('Hide All Sports');
-          $('.nh_sport_input').val("");
-          $('.sports_img').show(); 
-          $('.sports_img:nth-child(n+19)').hide();
       }
   }
 });
