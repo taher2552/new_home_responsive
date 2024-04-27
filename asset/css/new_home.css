@@ -572,6 +572,7 @@
   margin: 0; /* Remove default margins */
   position: relative;
   z-index: 100;
+  text-align: center;
 }
 
 .work_name p:first-child {
