@@ -251,7 +251,7 @@ padding: 0.5rem 2.5rem;
 .nh_monetize_box,
 .nh_register_box,
 .nh_training_box {
-  border-radius: 0.625rem;
+  border-radius:1rem;
   background: #d4baff;
   justify-content: flex-start;
   flex-direction: column;
@@ -379,8 +379,8 @@ padding: 0.5rem 2.5rem;
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  display: block; /* Ensures the image behaves as a block element */
-  margin: 0 auto; /* Centers the image horizontally */
+  display: block; 
+  margin: 0 auto;
 }
 
 .nh_cityname {
@@ -399,12 +399,15 @@ padding: 0.5rem 2.5rem;
 
 .nh_ad_wrapper {
   margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .ad_img img,
 .ad_img_2 img {
   height: 18rem;
   width: 100%;
+  border-radius: 1rem;
 }
 
 .ad_img,
@@ -1155,9 +1158,10 @@ padding: 0.5rem 2.5rem;
   border-radius: 0.1rem;
   position: absolute;
   left: 50%;
-  top: 7%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%,-50%);
   padding: 1.5rem;
+  border-radius: 1rem;
 }
 
 .current_location {
@@ -1741,6 +1745,18 @@ padding: 0.5rem 2.5rem;
     background-repeat: no-repeat;
     height: 12rem;
   }
+
+  .nh_city img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .nh_cityname span {
+    font-size: 0.8rem;
+  }
+  .city_flex{
+    gap:0.8rem;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -1791,6 +1807,11 @@ padding: 0.5rem 2.5rem;
   .map_rough img {
     width: 18rem;
     height: 18rem;
+  }
+
+  .nh_ad_wrapper {
+    margin-left:1rem;
+    margin-right:1rem;
   }
 }
 
