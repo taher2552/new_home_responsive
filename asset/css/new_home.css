@@ -791,10 +791,11 @@
   padding-right: 2.5rem;
   padding-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: start;
-  gap: 1.2rem;
+  gap: 2rem;
   padding-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .footer_topic {
@@ -832,6 +833,7 @@
   justify-content: start;
   align-items: start;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .mail_flex {
@@ -1323,6 +1325,7 @@
     flex-direction: column;
     gap:1rem;
 }
+
 }
 @media only screen and (max-width:1080px) {
   .ad_text_one,
@@ -1472,6 +1475,9 @@
  text-align: center;
 } 
 }
+@media only screen and (max-width:900px) {
+
+}
 @media only screen and (max-width:870px) {
   .ad_text_one,
   .ad_text_two,
@@ -1480,6 +1486,13 @@
   }
   .ad_img img {
     height: 12rem;
+  }
+}
+@media only screen and (max-width:850px) {
+
+
+  .footer_section{
+    gap:3rem;
   }
 }
 @media only screen and (max-width: 800px) {
