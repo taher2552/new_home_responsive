@@ -590,15 +590,15 @@ padding: 0.5rem 2.5rem;
 }
 
 /* Hover Effects */
-.work_name:hover {
-  width: 50%;
-  .work_para_2 {
-    display: block;
-  }
+.work_name{
+  transition: width 0.3s ease-in-out;
 }
 
-.work_name:hover .work_para_2 {
-  display: block; /* Show the paragraph */
+.work_box:hover .work_name {
+  width: 50%; /* Width becomes 50% on hover */
+  .work_para_2{
+    display: block;
+  }
 }
 
 .nh_work_wrapper {
