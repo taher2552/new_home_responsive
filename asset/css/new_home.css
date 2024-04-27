@@ -1483,6 +1483,30 @@
   .nh_monetize:nth-child(2) {
     justify-self: flex-end; /* Aligns the second div to the right */
   }
+
+  .work_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;   
+  }
+
+  .nh_work_wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .work_box{
+    width: 90%;
+  }
+
+  .work_container > .work_box:nth-child(2),
+  .work_container > .work_box:nth-child(4),
+  .work_container > .work_box:nth-child(6) {
+    justify-self: end;
+  }
+  
+  
 }
 
 @media only screen and (max-width: 950px) {
