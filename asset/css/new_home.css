@@ -1448,6 +1448,10 @@
     background-color: #d7aa00;
   }
 
+  .nh_work_wrapper{
+    overflow: hidden;
+  }
+
   .nh_register_box, .nh_monetize_box, .nh_training_box {
     opacity: 0;
     transform: translateX(-100%); /* Start off-screen */
@@ -1467,6 +1471,15 @@
 @keyframes slideInFromRight {
     from { transform: translateX(100%); }
     to { transform: translateX(0); opacity: 1; }
+}
+
+.aa, .bb, .cc, .dd, .ee, .ff {
+    opacity: 0;
+    transform: translateX(-100%); /* Assuming all start from left for consistency */
+}
+.aa, .cc, .ee {
+    opacity: 0;
+    transform: translateX(100%); /* Assuming all start from left for consistency */
 }
 
   .nh_monetize {
@@ -1511,24 +1524,25 @@
     justify-self: flex-end; /* Aligns the second div to the right */
   }
 
-  .work_container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    margin-top: 2rem;
-  }
+
 
   .nh_work_wrapper {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .work_box {
-    width: 90%;
-    opacity: 0;  /* Start invisible */
-    transform: translateX(-100%);  /* Start off the screen to the left */
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;  /* Smooth transition for transform and opacity */
+  .work_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
 }
+
+.work_container .work_box {
+    width: 90%;
+}
+
+
 
   .work_container > .work_box:nth-child(2),
   .work_container > .work_box:nth-child(4),
@@ -1546,9 +1560,7 @@
     border-bottom-right-radius: 1rem;
   }
 
-  .work_container > .work_box:nth-child(even) {
-    transform: translateX(100%);  /* Start off the screen to the right */
-}
+  
 }
 
 @media only screen and (max-width: 950px) {

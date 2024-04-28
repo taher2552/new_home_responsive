@@ -165,31 +165,41 @@ if ($(window).width() <= 930) {
   });
 }
 
-function isElementInView(element) {
-  var elementTop = $(element).offset().top;
-  var elementBottom = elementTop + $(element).outerHeight();
 
-  var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
 
-  return elementBottom > viewportTop && elementTop < viewportBottom;
-}
+});
 
-// Trigger animations on scroll
-$(window).on('scroll', function() {
-  $('.work_box').each(function() {
-      if (isElementInView(this)) {
-          $(this).css({
-              'transform': 'translateX(0)',  // Reset transform to bring into view
-              'opacity': 1  // Make fully visible
-          });
-      }
+// JavaScript with jQuery
+$(document).ready(function() {
+  // Define the observer options
+  const observerOptions = {
+      root: null, // observing for viewport
+      rootMargin: '0px',
+      threshold: 0.1 // Trigger when 10% of the element is visible
+  };
+
+  // Create an intersection observer instance
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) { // Check if the element is intersecting
+              let $target = $(entry.target);
+              // Determine the animation based on class
+              let animationName = 'slideInFromRight'; // Default animation
+              if ($target.hasClass('aa') || $target.hasClass('cc') || $target.hasClass('ee')) {
+                  animationName = 'slideInFromLeft'; // Change animation for specific classes
+              }
+              $target.css({
+                  animation: `${animationName} 0.5s forwards`,
+                  opacity: 1
+              });
+              observer.unobserve(entry.target); // Unobserve the current target
+          }
+      });
+  }, observerOptions);
+
+  // Attach observer to each target element
+  $('.aa, .bb, .cc, .dd, .ee, .ff').each(function() {
+      observer.observe(this);
   });
 });
 
-// Trigger scroll on load in case elements are already in view
-$(window).scroll();
-
-
-
-});
