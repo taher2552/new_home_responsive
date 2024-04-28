@@ -165,6 +165,31 @@ if ($(window).width() <= 930) {
   });
 }
 
+function isElementInView(element) {
+  var elementTop = $(element).offset().top;
+  var elementBottom = elementTop + $(element).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+}
+
+// Trigger animations on scroll
+$(window).on('scroll', function() {
+  $('.work_box').each(function() {
+      if (isElementInView(this)) {
+          $(this).css({
+              'transform': 'translateX(0)',  // Reset transform to bring into view
+              'opacity': 1  // Make fully visible
+          });
+      }
+  });
+});
+
+// Trigger scroll on load in case elements are already in view
+$(window).scroll();
+
 
 
 });

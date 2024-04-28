@@ -1525,7 +1525,10 @@
 
   .work_box {
     width: 90%;
-  }
+    opacity: 0;  /* Start invisible */
+    transform: translateX(-100%);  /* Start off the screen to the left */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;  /* Smooth transition for transform and opacity */
+}
 
   .work_container > .work_box:nth-child(2),
   .work_container > .work_box:nth-child(4),
@@ -1542,6 +1545,10 @@
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
+
+  .work_container > .work_box:nth-child(even) {
+    transform: translateX(100%);  /* Start off the screen to the right */
+}
 }
 
 @media only screen and (max-width: 950px) {
