@@ -86,18 +86,19 @@ $(".reg_box").click(function(event) {
 //sports
 
 
-$('#sports_click').click(function() {
+$('#sports_click, #sports_click_footer').click(function(event) {
   $('.sports_popup').slideToggle('fast'); // Toggle visibility with sliding effect
+  event.stopPropagation(); // Prevent this event from propagating to the document click handler
 });
 
 // Hide popup when clicking outside of sports_box within sports_popup
 $(document).on('click', function(event) {
-  // Check if the clicked area is not sports_click and not a descendant of sports_box
-  if (!$(event.target).closest('#sports_click, .sports_box').length) {
-      // If the popup is visible, slide it up to hide
-      if ($('.sports_popup').is(':visible')) {
-          $('.sports_popup').slideUp('fast');
-      }
+  // Check if the clicked area is not sports_click, sports_click_footer, and not a descendant of sports_box
+  if (!$(event.target).closest('#sports_click, #sports_click_footer, .sports_box').length) {
+    // If the popup is visible, slide it up to hide
+    if ($('.sports_popup').is(':visible')) {
+        $('.sports_popup').slideUp('fast');
+    }
   }
 });
 

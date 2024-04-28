@@ -1095,7 +1095,8 @@
 }
 
 .sports_box {
-  width: 55rem;
+  width: 70%;
+  height: 65%;
   background-color: #fff;
   border-radius: 1rem;
   position: absolute;
@@ -1103,6 +1104,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 1.5rem;
+  overflow: auto;
 }
 
 ::placeholder {
@@ -1130,7 +1132,7 @@
   cursor: pointer;
 }
 
-.sports_icon,
+
 .city_icon {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -1139,10 +1141,18 @@
   place-items: center;
 }
 
+.sports_icon{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:1.5rem;
+  flex-wrap: wrap;
+}
+
 .sports_icon img,
 .city_icon img {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 .sports_icon p,
 .city_icon img {
@@ -1565,13 +1575,11 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .city_box,
-  .sports_box {
+  .city_box {
     width: 45rem;
   }
 
-  .city_icon,
-  .sports_icon {
+  .city_icon{
     grid-template-columns: repeat(7, 1fr);
     gap: 1rem;
   }
@@ -1611,13 +1619,11 @@
   }
 }
 @media only screen and (max-width: 800px) {
-  .city_box,
-  .sports_box {
+  .city_box {
     width: 35rem;
   }
 
-  .city_icon,
-  .sports_icon {
+  .city_icon{
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
   }
@@ -1726,6 +1732,21 @@
 
   .register_img img {
     width: 25rem;
+  }
+
+  .sports_box {
+    width: 100%;
+    height:70%;
+    border-radius:0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: fixed;
+    top:auto;
+    left: auto;
+    bottom:0;
+    transform: none;
+    padding: 1rem;
+    overflow: auto;
   }
 }
 @media only screen and (max-width: 684px) {
