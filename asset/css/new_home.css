@@ -95,7 +95,7 @@
 }
 
 .nh_options_wrapper {
-padding: 0.5rem 2.5rem;
+  padding: 0.5rem 2.5rem;
 }
 .nh_options_wrapper ul {
   justify-content: end;
@@ -251,7 +251,7 @@ padding: 0.5rem 2.5rem;
 .nh_monetize_box,
 .nh_register_box,
 .nh_training_box {
-  border-radius:1rem;
+  border-radius: 1rem;
   background: #d4baff;
   justify-content: flex-start;
   flex-direction: column;
@@ -302,8 +302,13 @@ padding: 0.5rem 2.5rem;
 }
 
 .nh_sport_wrapper {
-  height: 20rem;
   overflow: auto;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  place-items: center;
+  column-gap:1rem;
+  row-gap: 2.5rem;
 }
 .nh_play_wrap h2 {
   font-size: 2rem;
@@ -312,7 +317,7 @@ padding: 0.5rem 2.5rem;
 }
 
 .nh_sport_box {
-  width: 22rem;
+  width: 14rem;
   height: 17rem;
   border-radius: 1.5rem;
   background: linear-gradient(180deg, #fde7c7 0.06%, #fed2b7 99.94%);
@@ -341,6 +346,7 @@ padding: 0.5rem 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .nh_sport_name span {
@@ -379,7 +385,7 @@ padding: 0.5rem 2.5rem;
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  display: block; 
+  display: block;
   margin: 0 auto;
 }
 
@@ -525,7 +531,6 @@ padding: 0.5rem 2.5rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 2rem;
-  
 }
 
 .work_box {
@@ -553,7 +558,6 @@ padding: 0.5rem 2.5rem;
   align-items: center;
   transition: width 1s ease;
 }
-
 
 .work_name::after {
   content: "";
@@ -590,13 +594,13 @@ padding: 0.5rem 2.5rem;
 }
 
 /* Hover Effects */
-.work_name{
+.work_name {
   transition: width 0.3s ease-in-out;
 }
 
 .work_box:hover .work_name {
   width: 50%; /* Width becomes 50% on hover */
-  .work_para_2{
+  .work_para_2 {
     display: block;
   }
 }
@@ -1093,11 +1097,11 @@ padding: 0.5rem 2.5rem;
 .sports_box {
   width: 55rem;
   background-color: #fff;
-  border-radius:1rem;
+  border-radius: 1rem;
   position: absolute;
-  left:50%; 
+  left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   padding: 1.5rem;
 }
 
@@ -1161,7 +1165,7 @@ padding: 0.5rem 2.5rem;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   padding: 1.5rem;
   border-radius: 1rem;
 }
@@ -1246,9 +1250,9 @@ padding: 0.5rem 2.5rem;
   background: #fe5c4d;
   padding: 0.5rem 1rem;
   position: fixed;
-  bottom:0.2%;
+  bottom: 0.2%;
   width: 98%;
-  margin-left:1%;
+  margin-left: 1%;
 }
 
 .footer_img {
@@ -1284,13 +1288,13 @@ padding: 0.5rem 2.5rem;
 
 /* Sets the thumb (the part you drag) */
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* Darker grey thumb */
+  background-color: #dcdcdc; /* Darker grey thumb */
   cursor: pointer;
 }
 
 /* Changes thumb color on hover or when being clicked */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Darker grey on hover */
+  background-color: #dcdcdc; /* Darker grey on hover */
   cursor: pointer;
 }
 
@@ -1488,7 +1492,7 @@ padding: 0.5rem 2.5rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    margin-top: 2rem;   
+    margin-top: 2rem;
   }
 
   .nh_work_wrapper {
@@ -1496,7 +1500,7 @@ padding: 0.5rem 2.5rem;
     padding-right: 0;
   }
 
-  .work_box{
+  .work_box {
     width: 90%;
   }
 
@@ -1505,9 +1509,6 @@ padding: 0.5rem 2.5rem;
   .work_container > .work_box:nth-child(6) {
     justify-self: end;
   }
-
-  
-  
 }
 
 @media only screen and (max-width: 950px) {
@@ -1529,6 +1530,10 @@ padding: 0.5rem 2.5rem;
   .city_flex {
     grid-template-columns: repeat(20, 1fr);
     gap: 1.5rem;
+  }
+
+  .nh_sport_wrapper {
+    grid-template-columns: repeat(7, 1fr);
   }
 
   .nh_play_wrap h2 {
@@ -1594,7 +1599,6 @@ padding: 0.5rem 2.5rem;
   }
 }
 @media only screen and (max-width: 700px) {
-
   .work_name {
     position: absolute;
     top: 0;
@@ -1604,12 +1608,11 @@ padding: 0.5rem 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items:center;
+    align-items: center;
     padding: 1rem;
     transition: width 1s ease;
   }
-  
-  
+
   .work_name::after {
     content: "";
     position: absolute;
@@ -1617,10 +1620,10 @@ padding: 0.5rem 2.5rem;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0,0.5);
+    background: rgba(0, 0, 0, 0.5);
   }
 
-  .work_box{
+  .work_box {
     pointer-events: none;
   }
 
@@ -1628,10 +1631,10 @@ padding: 0.5rem 2.5rem;
     display: block;
   }
 
-  .footer_section{
+  .footer_section {
     padding-bottom: 5rem;
   }
-  .footer_icon{
+  .footer_icon {
     display: flex;
   }
   .nh_search_wrapper {
@@ -1678,6 +1681,15 @@ padding: 0.5rem 2.5rem;
   }
 }
 @media only screen and (max-width: 650px) {
+  .nh_sport_box {
+    width: 10rem;
+    height: 14rem;
+  }
+  
+  .nh_sport_box img {
+    width: 8rem;
+    height: 9rem;
+  }
   .ad_text_two,
   .ad_text_new {
     width: 25rem;
@@ -1759,8 +1771,8 @@ padding: 0.5rem 2.5rem;
   .nh_cityname span {
     font-size: 0.8rem;
   }
-  .city_flex{
-    gap:0.8rem;
+  .city_flex {
+    gap: 0.8rem;
   }
 }
 
@@ -1815,8 +1827,8 @@ padding: 0.5rem 2.5rem;
   }
 
   .nh_ad_wrapper {
-    margin-left:1rem;
-    margin-right:1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
