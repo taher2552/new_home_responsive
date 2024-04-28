@@ -153,6 +153,18 @@ $('#citySearchInput').keyup(function() {
 
 // sliding
 
+if ($(window).width() <= 930) {
+  // Apply animations to the first and third boxes
+  $('.nh_register_box, .nh_monetize_box').css({
+      animation: 'slideInFromLeft 0.5s forwards' // Uses the 'forwards' value to maintain the final state
+  });
+
+  // Apply animation to the second box
+  $('.nh_training_box').css({
+      animation: 'slideInFromRight 0.5s forwards'
+  });
+}
+
 
 
 });

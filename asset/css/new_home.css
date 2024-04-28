@@ -1448,6 +1448,27 @@
     background-color: #d7aa00;
   }
 
+  .nh_register_box, .nh_monetize_box, .nh_training_box {
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen */
+    transition: all 0.5s ease-out;
+}
+
+.nh_training_box {
+    transform: translateX(100%); /* Start off-screen for the training box */
+}
+
+/* Animation keyframes */
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); opacity: 1; }
+}
+
   .nh_monetize {
     padding: 0rem;
   }
