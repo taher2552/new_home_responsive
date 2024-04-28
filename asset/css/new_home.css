@@ -774,7 +774,7 @@
 
 .blog_container {
   padding-top: 0.5rem;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .footer_wrap {
@@ -1231,11 +1231,12 @@
 }
 
 .city_flex {
-  overflow: scroll;
+  overflow: auto;
   display: grid;
   grid-template-columns: repeat(60, 1fr);
   gap: 1.5rem;
   padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .mission_new {
@@ -1508,6 +1509,16 @@
   .work_container > .work_box:nth-child(4),
   .work_container > .work_box:nth-child(6) {
     justify-self: end;
+    border-radius: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+  .work_container > .work_box:nth-child(1),
+  .work_container > .work_box:nth-child(3),
+  .work_container > .work_box:nth-child(5) {
+    border-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 }
 
@@ -1603,7 +1614,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 18rem;
+    height: 12rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1625,6 +1636,7 @@
 
   .work_box {
     pointer-events: none;
+    height: 12rem;
   }
 
   .work_para_2 {
