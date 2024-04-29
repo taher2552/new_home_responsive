@@ -549,7 +549,7 @@
 .work_name {
   position: absolute;
   top: 0;
-  right: 0;
+  right:0;
   height: 18rem;
   width: 10rem;
   display: flex;
@@ -588,22 +588,27 @@
 .work_name p:first-child {
   margin-bottom: 2rem;
 }
-
+.work_name p:last-child {
+ min-width: 20rem;
+ text-align: left;
+}
 .work_para_2 {
-  display: none;
+  display: block;
+  transform: translateY(100%); /* Initially hides the element by moving it down */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for sliding up and down */
+  height: 0; /* Use height to control visibility and transitions */
+  overflow: hidden; /* Prevent content from showing when height is 0 */
 }
-
-/* Hover Effects */
-.work_name {
-  transition: width 0.3s ease-in-out;
-}
-
 .work_box:hover .work_name {
-  width: 50%; /* Width becomes 50% on hover */
-  .work_para_2 {
-    display: block;
-  }
+  width: 50%;
 }
+
+.work_box:hover .work_para_2 {
+  transform: translateY(0%); /* Slide up on hover */
+  height: auto; /* Expand the height to fit content */
+}
+
+
 
 .nh_work_wrapper {
   padding: 1.5rem 2.5rem;
@@ -1018,6 +1023,25 @@
     transition: all 0.5s ease-in-out;
   }
 }
+
+.city_cross img , .sports_cross img, .register_cross img{
+  height: 100%;
+  width: 100%;
+}
+.city_cross , .sports_cross, .register_cross{
+ cursor: pointer;
+}
+
+.nh_flex_cross{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap:1rem;
+}
+.cross_para{
+margin-bottom: 0.5rem;
+}
+
 
 @media screen and (max-width: 1050px) {
   .acad_btn button {
@@ -1682,14 +1706,20 @@
     background: rgba(0, 0, 0, 0.5);
   }
 
-  .work_box {
-    pointer-events: none;
-    height: 12rem;
-  }
-
   .work_para_2 {
     display: block;
+    transform: translateY(0); /* Initially hides the element by moving it down */
+    height: auto; /* Use height to control visibility and transitions */
+    overflow: initial;
   }
+
+  .work_box {
+    pointer-events: none;
+    height: 13rem;
+  }
+
+
+
 
   .footer_section {
     padding-bottom: 5rem;

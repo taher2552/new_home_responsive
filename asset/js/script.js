@@ -56,7 +56,9 @@ $(document).ready(function(){
     registerButton.on('click', showPopup);
   }
 
-
+$('.register_cross').click(()=>{
+  hidePopup();
+})
 
   registerPopup.on('click', function(e) {
     if (e.target === registerPopup[0]) {
@@ -91,6 +93,10 @@ $('#sports_click, #sports_click_footer').click(function(event) {
   event.stopPropagation(); // Prevent this event from propagating to the document click handler
 });
 
+$('.sports_cross').click(function(){
+  $('.sports_popup').slideUp('fast');
+})
+
 // Hide popup when clicking outside of sports_box within sports_popup
 $(document).on('click', function(event) {
   // Check if the clicked area is not sports_click, sports_click_footer, and not a descendant of sports_box
@@ -117,6 +123,15 @@ $(".city_text").click(function() {
 
 $('#city_click').click(function() {
   $('.city_popup').slideToggle('fast'); // Toggle visibility with sliding effect
+});
+$('.city_cross').click(function() {
+  $('.city_popup').slideUp('fast');
+  $('.city_text').show().text('View All Cities');
+  $('.nh_city_input').val("");
+  $('.city_grid li').each(function() { // Iterate over each list item in the city grid
+        $(this).show(); 
+});
+  $(".city_grid").hide(); // Toggle visibility with sliding effect
 });
 
 // Hide popup when clicking outside of sports_box within sports_popup
@@ -202,5 +217,6 @@ $(document).ready(function() {
   $('.aa, .bb, .cc, .dd, .ee, .ff').each(function() {
       observer.observe(this);
   });
+  
 });
 
