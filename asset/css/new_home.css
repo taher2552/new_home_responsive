@@ -258,14 +258,38 @@
   padding: 1rem;
   width: 33%;
   height: 23rem;
+  transition: all 0.5s ease-in-out;
 }
 
 .nh_register_box {
   background-color: #fee4e8;
 }
+.nh_register_box:hover {
+ background-color: #fb8295;
+ .register_step {
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+ }
+}
+
+.nh_training_box:hover{
+  background-color: #b095dd ;
+  .training_step {
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+  }
+}
 
 .nh_monetize_box {
   background-color: #ffeca5;
+}
+.nh_monetize_box:hover {
+  background-color: #f0d058;
+  .monetize_step {
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+  }
+  
 }
 
 .step_one {
