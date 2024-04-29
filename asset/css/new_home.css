@@ -280,6 +280,32 @@
   }
 }
 
+.step_hover, .register_hover {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Hover state transformations */
+.nh_register_box:hover .step_hover {
+  transform: scale(0.8); 
+}
+
+.nh_register_box:hover .register_hover {
+  transform: scale(1.2); 
+}
+.nh_training_box:hover .step_hover {
+  transform: scale(0.8);
+}
+
+.nh_training_box:hover .register_hover {
+  transform: scale(1.2);
+}
+.nh_monetize_box:hover .step_hover {
+  transform: scale(0.8);
+}
+
+.nh_monetize_box:hover .register_hover {
+  transform: scale(1.2); /* Enlarge effect */
+}
 .nh_monetize_box {
   background-color: #ffeca5;
 }
